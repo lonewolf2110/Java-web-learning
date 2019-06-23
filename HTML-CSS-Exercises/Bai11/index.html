@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tao form va cac dieu khien tren form</title>
+        <link rel="stylesheet" href="stylesheet.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Dang nhap</h1>
+            <table cellpadding="10px">
+                <tr>
+                    <td>Ma nguoi dung:</td>
+                    <td>
+                        <input type="text" name="username" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mat khau:</td>
+                    <td>
+                        <input type="password" name="password" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center">
+                        <input
+                            type="submit"
+                            value="Dong y"
+                            onclick="onSubmit();"
+                        />
+                    </td>
+                </tr>
+                <tr id="username-tr" hidden>
+                    <td colspan="2" style="text-align: center">
+                        <p id="username">dsads</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

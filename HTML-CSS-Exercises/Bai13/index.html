@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tao form va cac dieu khien</title>
+        <link rel="stylesheet" href="stylesheet.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Dang ky du lich</h1>
+            <table>
+                <tr>
+                    <td>Ho va ten</td>
+                    <td>
+                        <input type="text" id="name-inp" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Dia chi</td>
+                    <td>
+                        <input type="text" id="address-inp" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Dien thoai</td>
+                    <td>
+                        <input type="tel" id="phone-num-inp" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Khach Viet Nam</td>
+                    <td>
+                        <input type="checkbox" id="vn-cb" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Chon tour</td>
+                    <td>
+                        <select id="tour-sl">
+                            <optgroup label="Mien Bac">
+                                <option value="hn-hl-sp">Ha Noi - Ha Long - Sapa</option>
+                                <option value="hn-ch-nb">Ha Noi - Chua Huong - Ninh Binh</option>
+                                <option value="hn-cb-tc">Ha Noi - Cat Ba - Tuan Chau</option>
+                            </optgroup>
+                            <optgroup label="Mien Trung">
+                                <option value="h-bm-dn">Hue - Bach Ma - Da Nang</option>
+                                <option value="nt - dl">Nha Trang - Da Lat</option>
+                                <option value="bmt-gl-kt">Buon Me Thua - Gia Lai - Kontum</option>
+                            </optgroup>
+                            <optgroup label="Mien Nam">
+                                <option value="hihi">Hihihi</option>
+                                <option value="hehe">Hehehe</option>
+                                <option value="hoho">Hohoho</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phuong tien</td>
+                    <td>
+                        <input type="radio" name="pt-rdg" value="airplane" /> May bay
+                        <input type="radio" name="pt-rdg" value="car" checked /> Xe o to
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="fl-td">
+                            <div class="sl-container">
+                                <span class="title">So luong doan khach</span>
+                                <div class="content">
+                                    <span>Nguoi lon &ensp;</span>
+                                    <input type="text" id="n-adults-inp" />
+                                    <span>&ensp; Tre em &ensp;</span>
+                                    <input type="text" id="n-childs-inp" />
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ghi chu them</td>
+                    <td>
+                        <textarea rows="2"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center">
+                        <button type="button" onclick="onSubmit();">Dong y</button>
+                    </td>
+                </tr>
+                <tr id="stt-tr" hidden>
+                    <td colspan="2" style="text-align: center; color: paleturquoise">
+                        Ban da dang ky thanh cong
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

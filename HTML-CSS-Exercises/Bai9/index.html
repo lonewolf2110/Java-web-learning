@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tao bang, tron dong va cot</title>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                margin: 50px;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            table tr td.title {
+                text-align: center;
+                color: red;
+            }
+
+            table tr td,
+            th {
+                border: 1px solid orange;
+            }
+
+            table tr th {
+                background-color: #cc0033;
+                color: white;
+            }
+
+            table tr td.center {
+                text-align: center;
+            }
+
+            h1 {
+                color: #cc0033;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Chuong trinh hoc - nganh lap trinh</h1>
+        <table cellpadding="10">
+            <tr>
+                <th rowspan="2">Nhom hoc phan</th>
+                <th rowspan="2">Mon hoc</th>
+                <th colspan="2">So tiet</th>
+            </tr>
+            <tr>
+                <th>Ly thuyet</th>
+                <th>Thuc hanh</th>
+            </tr>
+            <tr>
+                <td rowspan="6" class="title">I<br />Tin hoc van phong</td>
+                <td>He dieu hanh Windows</td>
+                <td class="center">3</td>
+                <td class="center">5</td>
+            </tr>
+
+            <tr>
+                <td>Su dung Internet</td>
+                <td class="center">3</td>
+                <td class="center">5</td>
+            </tr>
+            <tr>
+                <td>Soan thao van ban voi MS Word</td>
+                <td class="center">24</td>
+                <td class="center">40</td>
+            </tr>
+            <tr>
+                <td>Tao bai trinh dien voi Powerpoint</td>
+                <td class="center">9</td>
+                <td class="center">15</td>
+            </tr>
+            <tr>
+                <td>Xu ly so lieu voi MS Excel</td>
+                <td class="center">24</td>
+                <td class="center">40</td>
+            </tr>
+            <tr>
+                <td>Tao trang web voi MS FrontPage</td>
+                <td class="center">9</td>
+                <td class="center">15</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="title">
+                    II<br />Ky thuat lap trinh (VB.Net)
+                </td>
+                <td>Nhap mon lap trinh</td>
+                <td class="center">36</td>
+                <td class="center">60</td>
+            </tr>
+            <tr>
+                <td>Ky thuat lap trinh</td>
+                <td class="center">36</td>
+                <td class="center">60</td>
+            </tr>
+            <tr>
+                <td colspan="4">...</td>
+            </tr>
+        </table>
+    </body>
+</html>

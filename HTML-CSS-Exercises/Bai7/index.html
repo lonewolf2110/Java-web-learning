@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ky tu dac biet, chen hinh anh, tao danh sach va lien ket</title>
+        <style>
+            h1 {
+                text-align: center;
+                color: palevioletred;
+                font-size: 4em;
+            }
+
+            div.container {
+                display: flex;
+            }
+
+            div img {
+                flex-grow: 2;
+            }
+
+            div.container div.infor {
+                flex-grow: 8;
+            }
+
+            div.container div.infor {
+                font-size: 2em;
+            }
+
+            div.container div.infor span.title {
+                background-color: plum;
+                color: white;
+            }
+
+            p.footer {
+                text-align: right;
+            }
+
+            span.copyright {
+                font-size: 2em;
+                background-color: plum;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Cong ty Hoa tuoi Nhan Ai</h1>
+        <div class="container">
+            <img src="img.jpg" width="30px" />
+            <div class="infor">
+                <ol>
+                    <li>
+                        <span class="title">Gioi thieu</span>
+                        <ul style="list-style: square">
+                            <li>Thanh lap ngay</li>
+                            <li>Chuyen cung cap cac loai hoa tuoi</li>
+                            <li>Co tren 20 cua hang</li>
+                            <li>Nhan ket gio hoa theo yeu cau</li>
+                        </ul>
+                    </li>
+                    <hr />
+                    <li>
+                        <span class="title">Lien he</span>
+                        <ul style="list-style: circle">
+                            <li>Dien thoai: xxxxxxxxxxxx</li>
+                            <li>
+                                Dia chi: &emsp; <i>227 Nguyen Van Cu, ....</i>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <p class="footer">
+            <span class="copyright">
+                &copy; Copyright: <a href="https://google.com.vn">Hihihihihi</a>
+            </span>
+        </p>
+    </body>
+</html>

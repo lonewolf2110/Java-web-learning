@@ -1,0 +1,94 @@
+div.container {
+    display: flex;
+    flex-direction: column;
+}
+
+div.container div.header {
+    display: flex;
+}
+
+div.container div.header div.title {
+    flex-grow: 7;
+    display: flex;
+    flex-direction: column;
+}
+
+div.container div.header div.title div {
+    border: 2px solid orange;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+div.container div.header div.image {
+    border-width: 2px 2px 2px 0px;
+    border-style: solid;
+    border-color: orange;
+}
+
+div.container div.header div.title div.sep {
+    flex-grow: 1;
+    border-width: 0px 2px 0px 2px;
+    border-style: solid;
+    border-color: orange;
+}
+
+div.container div.header div.title div.t-banner {
+    justify-content: flex-end;
+    flex-grow: 2;
+    background-color: #FF0000;
+    color: white;
+    font-size: 28px;
+}
+
+div.container div.header div.title div.t-title {
+    color: #FF0000;
+    font-size: 36px;
+    background-color: #FFBBBB;
+}
+
+div.container div.header div.title div {
+    flex-grow: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.container div.header div.title span.highlight {
+    text-align: right;
+    color: white;
+    font-size: 28px;
+}
+
+div.container div.header div.title span.title {
+    text-align: center;
+    color: #FF0000;
+    font-size: 36px;
+}
+
+div.container div.header div.image {
+    flex-grow: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.container div.content {
+    display: flex;
+    border-width: 0px 2px 2px 2px;
+    border-style: solid;
+    border-color: orange;
+}
+
+div.container div.content div.sep {
+    flex-basis: 2px;
+    background-color: orange;
+}
+
+div.container div.content ul.title {
+    flex: 1;
+    list-style-type: square;
+}
+
+div.container div.content ul.title li.title {
+    color: red;
+}

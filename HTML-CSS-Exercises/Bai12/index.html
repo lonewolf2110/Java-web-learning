@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tao form va cac dieu khien</title>
+        <link rel="stylesheet" href="stylesheet.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Phieu dang ky tham gia chuong trinh khuyen mai</h1>
+            <table>
+                <tr>
+                    <td>Ho va ten</td>
+                    <td>
+                        <input type="text" id="full-name-input" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Dia chi</td>
+                    <td>
+                        <input type="text" id="address-input" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Dien thoai</td>
+                    <td>
+                        <input type="tel" id="phone-input" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phai</td>
+                    <td>
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="male"
+                            checked
+                        />
+                        Nam
+                        <input type="radio" name="gender" value="female" /> Nu
+                    </td>
+                </tr>
+                <tr>
+                    <td>Chon san pham tham gia</td>
+                    <td>
+                        <select name="products" required>
+                            <option value="bg">Bot giat</option>
+                            <option value="kdr">Kem danh rang</option>
+                            <option value="dgd">Dau goi dau</option>
+                            <option value="st">Sua tam</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>So nguoi du doan tham gia:</td>
+                    <td>
+                        <input type="number" id="npersions-input" />
+                    </td>
+                </tr>
+                <tr style="text-align: center">
+                    <td colspan="2">
+                        <button type="button" onclick="onSubmit();">
+                            Dong y
+                        </button>
+                    </td>
+                </tr>
+                <tr id="status-tr" style="text-align: center" hidden>
+                    <td colspan="2">
+                        <span style="color: brown;"
+                            >Ban da dang ky thanh cong!</span
+                        >
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

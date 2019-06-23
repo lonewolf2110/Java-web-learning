@@ -1,0 +1,133 @@
+div.container {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+div.header {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    width: 100%;
+}
+
+div.header span {
+    float: left;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 0px 0px 0px 5px;
+    font-weight: bold;
+    color: cornflowerblue;
+}
+
+div.header span.b1 {
+    font-size: 5em;
+    padding-left: 10px;
+    padding-right: 5px;
+    background-image: url("assets/2.jpg");
+    background-size: cover;
+}
+
+div.header span.b1-nobg {
+    margin: 0;
+    font-size: 5em;
+}
+
+div.header span.b2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+div.header span.b3 {
+    font-size: 2em;
+    margin-bottom: 13px;
+}
+
+div.header img {
+    flex-grow: 1;
+}
+
+div.header div.text-container {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    align-items: flex-end;
+    display: flex;
+    flex-grow: 8;
+}
+
+div.content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 1px 1px 1px;
+}
+
+div.content div.menu-container {
+    flex-grow: 3;
+}
+
+div.content div.menu-container ul {
+    list-style-type: circle;
+}
+
+div.content div.menu-container li {
+    margin: 5px;
+}
+
+div.content div.item-container {
+    flex-grow: 7;
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 0px 0px 1px;
+}
+
+div.content div.item-container p {
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+div.content div.item-container p.heading {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: white;
+    font-weight: bold;
+    background-color: cornflowerblue;
+    padding: 3px;
+}
+
+div.content div.item-container p.title {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: cornflowerblue;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+div.content div.item-container div.des-container {
+    display: flex;
+    margin: 5px;
+}
+
+div.content div.item-container a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 10px;
+}
+
+div.content div.item-container a span {
+    background-color: rgb(194, 194, 194);
+}
+
+div.separator {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
