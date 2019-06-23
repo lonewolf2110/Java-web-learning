@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>May tinh don gian</h1>
+            <div>
+                <span>So thu 1: </span>
+                <input type="number" id="number-1" />
+                <button onclick="calc('+');">+</button>
+                <button onclick="calc('-');">-</button>
+            </div>
+            <div>
+                <span>So thu 2: </span>
+                <input type="number" id="number-2" />
+                <button onclick="calc('*');">*</button>
+                <button onclick="calc('/');">/</button>
+            </div>
+            <div>
+                <span>Ket qua: </span>
+                <input type="text" id="result" disabled />
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

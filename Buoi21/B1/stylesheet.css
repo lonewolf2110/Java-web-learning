@@ -1,0 +1,24 @@
+div.container {
+    display: flex;
+    flex-direction: column;
+}
+
+div.container > div {
+    display: flex;
+}
+
+div.container > div > span {
+    width: 100px;
+}
+
+div.container > div > input {
+    width: 200px;
+}
+
+div.container > div > button {
+    width: 50px;
+}
+
+div.container > div > * {
+    margin: 5px;
+}

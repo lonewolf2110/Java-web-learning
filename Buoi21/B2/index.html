@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Buoi 21 - Bai 2</title>
+        <link rel="stylesheet" href="stylesheet.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <span>Name: </span>
+                <input type="text" id="name-inp" onkeyup="keyUp(event);" />
+                <span class="error" hidden>This field is required</span>
+            </div>
+            <div>
+                <span>Email: </span>
+                <input type="text" id="email-inp" onkeyup="keyUp(event);" />
+                <span class="error" hidden>A valid email address is required</span>
+            </div>
+            <div>
+                <span>Website: </span>
+                <input type="text" id="website-inp" onkeyup="keyUp(event);" />
+                <span class="error" hidden>A valid url is required</span>
+            </div>
+            <div>
+                <span>Message: </span>
+                <textarea id="message"></textarea>
+                <span class="error" hidden>This field is required</span>
+            </div>
+            <button onclick="submit();">Submit</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
