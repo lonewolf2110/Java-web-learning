@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                <input id="result" type="text" value="0" disabled />
+                <p class="ans">
+                    <span title="Nếu giá trị là true, lần nhập tiếp theo sẽ xoá màn hình hiện tại">
+                        cls: <b id="cls">false</b>
+                    </span> |
+                    <span title="Phép toán đang chờ để đuợc thực hiện">
+                        opt: <b id="opt">không</b>
+                    </span><br />
+                    <span title="Giá trị của bộ nhớ đệm ">
+                        buff: <b id="buff">0</b>
+                    </span>
+                </p>
+            </div>
+            <div class="btn-r">
+                <button class="opt">+</button>
+                <button class="opt">-</button>
+                <button class="opt">&#215;</button>
+                <button class="opt">&#247;</button>
+            </div>
+            <div class="btn-c">
+                <div class="btn-3c">
+                    <div class="btn-r">
+                        <button class="num">7</button>
+                        <button class="num">8</button>
+                        <button class="num">9</button>
+                    </div>
+                    <div class="btn-r">
+                        <button class="num">4</button>
+                        <button class="num">5</button>
+                        <button class="num">6</button>
+                    </div>
+                    <div class="btn-r">
+                        <button class="num">1</button>
+                        <button class="num">2</button>
+                        <button class="num">3</button>
+                    </div>
+                    <div class="btn-r">
+                        <button class="num">0</button>
+                        <button class="dot">.</button>
+                        <button class="AC">AC</button>
+                    </div>
+                </div>
+                <div class="btn-1c">
+                    <button class="equal">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
