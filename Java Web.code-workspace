@@ -5,7 +5,6 @@
 	"settings": {
 		"editor.formatOnPaste": true,
 		"editor.formatOnSave": true,
-		"editor.fontSize": 16,
 		"files.insertFinalNewline": true,
 	}
 }
