@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="buoi26jstl" />
         <module name="buoi25" />
+        <module name="javaweb" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="buoi23" target="1.8" />
-      <module name="buoi24" target="1.8" />
+      <module name="bai26jstl" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

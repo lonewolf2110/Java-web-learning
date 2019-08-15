@@ -27,11 +27,10 @@
             <thead class="thead-dark">
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Ten</th>
-                    <th scope="col">Lop</th>
-                    <th scope="col">Dia chi</th>
-                    <th scope="col">Diem TB</th>
-                    <th scope="col">Chuc nang</th>
+                    <th scope="col">Tên</th>
+                    <th scope="col">Khoa</th>
+                    <th scope="col">Lớp</th>
+                    <th scope="col">Chức năng</th>
                 </tr>
             </thead>
             <tbody>
@@ -44,9 +43,8 @@
                 for (int idx = 1; resultSet.next(); idx++) {
                     int id = resultSet.getInt("id");
                     String name = resultSet.getString("name");
+                    String major = resultSet.getString("major");
                     String classname = resultSet.getString("class");
-                    String address = resultSet.getString("address");
-                    float score = resultSet.getFloat("score");
                     %>
                 <tr id="tr<%=id%>">
                     <th scope="row" style="vertical-align: middle">
@@ -57,16 +55,12 @@
                         <input id="nameInp<%=id%>" type="text" class="form-control" value="<%=name%>" hidden>
                     </td>
                     <td>
+                        <span id="majorSpan<%=id%>"><%=major%></span>
+                        <input id="majorInp<%=id%>" type="text" class="form-control" value="<%=major%>" hidden>
+                    </td>
+                    <td>
                         <span id="classSpan<%=id%>"><%=classname%></span>
                         <input id="classInp<%=id%>" type="text" class="form-control" value="<%=classname%>" hidden>
-                    </td>
-                    <td>
-                        <span id="addressSpan<%=id%>"><%=address%></span>
-                        <input id="addressInp<%=id%>" type="text" class="form-control" value="<%=address%>" hidden>
-                    </td>
-                    <td>
-                        <span id="scoreSpan<%=id%>"><%=score%></span>
-                        <input id="scoreInp<%=id%>" type="text" class="form-control" value="<%=score%>" hidden>
                     </td>
                     <td>
                         <button type="button" class="btn btn-primary" onclick="enableUpdate(<%=id%>)">Sua</button>
@@ -82,7 +76,7 @@
             </tbody>
         </table>
 
-        <button type="button" class="btn btn-success">Them</button>
+        <a href="insert" class="btn btn-success">Thêm</a>
     </div>
 
     <script
@@ -91,7 +85,7 @@
             crossorigin="anonymous"></script>
 
     <script>
-        const elemNames = ["name", "class", "address", "score"];
+        const elemNames = ["name", "major", "class"];
         function deleteRow(id) {
             $.ajax({
                url: "delete",
@@ -100,11 +94,11 @@
                    id: id
                 },
                 success: function (result) {
-                   alert("Xoa thanh cong");
+                   alert("Xóa thành công");
                    location.reload();
                 },
                 error: function (error) {
-                    alert("Loi!");
+                    alert("Lỗi!");
                 }
             });
         }
@@ -148,10 +142,10 @@
                             newValue: newVal
                         },
                         success: function (result) {
-                            alert("Sua thanh cong!");
+                            alert("Sửa thành công!");
                         },
                         error: function (error) {
-                            alert("Loi");
+                            alert("Lỗi!");
                         }
                     })
                 }

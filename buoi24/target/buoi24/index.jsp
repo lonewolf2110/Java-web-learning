@@ -38,14 +38,14 @@
                     String className = resultSet.getString("class");
                     String address = resultSet.getString("address");
                     float score = resultSet.getFloat("score");
-                    %>
+        %>
                     <tr>
                         <td><%=name%></td>
                         <td><%=className%></td>
                         <td><%=address%></td>
                         <td><%=score%></td>
                     </tr>
-                    <%
+        <%
                 }
             } catch (Exception ex) {
                 ex.printStackTrace();
