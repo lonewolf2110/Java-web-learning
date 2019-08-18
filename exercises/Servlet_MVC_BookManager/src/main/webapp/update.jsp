@@ -21,7 +21,7 @@
     <form method="post" action="update">
         <div class="form-group" hidden>
             <label>
-                <input type="number" name="id" value="${book.getId()}" />
+                <input type="number" name="id" value="${book.getId()}" readonly />
             </label>
         </div>
         <div class="form-group">
